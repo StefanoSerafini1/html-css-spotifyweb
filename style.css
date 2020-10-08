@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    max-width: 1200px;
+}
+
+/* barra aside di sinistra*/
+
+aside .menu-sx {
+    display: flex;
+    flex-direction:column;
+    width: 150px;
+    height: 1000px;
+    background-color: black;
+    color:white;
+
+}
+header .reg-bar {
+    display:flex;
+    width: calc(100vw - 150px);
+    height: 70px;
+    background: linear-gradient(to right, #492c44, #354558);
+    color:white;
+}
+main {
+    width: 100%;
+    height: calc(100% - 140px);
+    background-color: yellow;
+    padding-left: 25px;
+    padding-bottom: 70px;
+    color:black;
+}
+.footer{
+    position:relative;
+}
+
+.box {
+    display:flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    background-color:  	green;
+    position:fixed;
+    bottom:0;
+}

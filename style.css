@@ -34,6 +34,13 @@ main {
     padding-bottom: 70px;
     color:black;
 }
+nav {
+    display:flex;
+    padding-top:30px;
+    background-color: yellow;
+}
+
+
 .footer{
     position:relative;
 }

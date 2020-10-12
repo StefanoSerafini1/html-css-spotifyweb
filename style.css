@@ -8,19 +8,23 @@
 body {
     color: #fff;
 }
-/* Da ordinare meglio */
+/* gen */
 .visible-sm {
   display: block;
 }
 
-/* LAYOUT */
+
+/* gen */
 .app {
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-/* MAIN WINDOW */
+
+
+/* parte main*/
+
 .main-window {
     flex-grow: 1;
     display: flex;
@@ -70,7 +74,7 @@ body {
   list-style: none;
 }
 
-/* SIDEBAR */
+/* parte di sidebar*/
 .sidebar {
 
     display: flex;
@@ -88,7 +92,7 @@ body {
     padding-left: 20px
   }
 
-/* CONTENT */
+/* parte content con Playlist e bar */
 .content {
     position: relative;
     flex-grow: 1;
@@ -106,7 +110,7 @@ body {
     text-align: right;
     padding: 20px;
 }
-
+/* prova scroll */
 .content .scrollable {
     position: absolute;
     top: 0;
@@ -114,7 +118,6 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    /* 90px = height di content-top-bar */
     padding: 90px 15px 30px;
 }
 
@@ -124,9 +127,9 @@ body {
 
 }
 
-/* BOTTOM PLAYER */
-.player {
 
+/*parte player con song in esecuzione*/
+.player {
     background: #333;
     padding: 20px;
     display: flex;
@@ -134,16 +137,13 @@ body {
 }
 
 .home ul li i {
-
   font-size: 40px;
   margin-right: 10px;
 }
-
 .home ul li a {
   font-size: 12px;
   padding: 7px 7px 0;
 }
-
 .download i {
   font-size: 12px;
 }
@@ -196,13 +196,11 @@ body {
 .content-top-bar a:hover {
   background-color: #acfe2e
 }
-
 .content-menu ul li a {
   text-decoration: none;
   color: #747474;
   align-items: center;
 }
-
 .content-menu ul li {
   position: relative;
   display: inline-block;
@@ -212,11 +210,9 @@ body {
   margin-bottom: 40px;
   border: 3px solid transparent;
 }
-
 .content-menu ul li a:hover {
   color: white;
 }
-
 .content-menu ul li a:hover::after {
   position: absolute;
   content: '';
@@ -365,7 +361,10 @@ body {
 
 .settings i {
   color: white;
-  margin-right: 30px;
+  margin-right: 10px;
+}
+.settings a :first-child{
+  margin-left: 10px;
 }
 
 .hidden {
@@ -378,10 +377,9 @@ body {
 }
 
 .line.line-inline {
-  /* flex-grow: 0; */
   width: 100px;
 }
-/* Media Query */
+/*Media query non sotto 600 px*/
 
 @media all and (min-width:1024px) {
   .visible-sm {
